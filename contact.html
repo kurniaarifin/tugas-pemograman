@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <title>Mettana | find your shoes </title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="/images/mettha.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    />
+</head>
+<body>
+<div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-new.svg" alt="" width="215px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li ><a href="index.html" style="color:#555;">Home</a></li>
+              <li><a href="products.html" style="color:#555;">Products</a></li>
+              <li><a href="about.html"style="color:#555;">About</a></li>
+              <li><a href="contact.html"style="color:#555;">Contact</a></li>
+              <li><a href="account.html"style="color:#555;">Account</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="images/cart.png" alt="" width="30px" height="30px"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+
+
+<!-- Contact Us -->
+      </div>
+    </div>
+   <div class="row justify-content-center">
+      <div class="col-lg-4 text-center">
+        <!--<h2 class="text-md-left">Contact Us</h2> -->
+        <br>
+        <div class="card text-white bg-dark mb-4">
+            <div class="card-body">
+              <h4 style="color: aliceblue;"> Get Discuss</h4>
+             <p class="text-card" style="color:white">Let's contact us and start discussing with us</p>
+            </div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h4>Location</h4>
+          </li>
+          <li class="list-group-item">Jl. K.H. Djawad Faqih MG3/858, Prawirotaman, Karangkajen, Yogyakarta</li>
+          <li class="list-group-item">West Java, Indonesia</li>
+          <li class="list-group-item">www.mettanastore.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <form class="text-md-left">
+          <div class="form-group">
+          <h4 style="color: black;">Enter Your Personal Data</h4>
+          <br>
+            <label for="Nama">Nama</label>
+            <input type="text" class="form-control" id="Nama">
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text" class="form-control" id="Email">
+          </div>
+          <div class="form-group">
+            <label for="">No Telp</label>
+            <input type="text" class="form-control" id="No Telp">
+          </div>
+          <div class="form-group">
+            <label for="Pesan">Pesan</label>
+            <textarea name="Pesan" id="Pesan" class="form-control"></textarea>
+          </div>
+              <button type="button" class="btn btn-dark"> Send Message!</button>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+  <!--<div class="text-center">
+    <a href="https://web.facebook.com/profile.php?id=100035358997191" target="_blank">
+      <button type="button" class=" btn btn-dark">Facebook</button> </a>
+   
+    <a href="https://www.instagram.com/rifkii_y.a/?hl=en" target="_blank">
+      <button type="button" class=" btn btn-dark">Instagram</button>
+    </a>
+  </div>
+-->
+</section>
+        <!-- footer-->
+  <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br/>
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white2.svg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+              Porro, eum?
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - Mettana Store</p>
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+</body>
+</html>
